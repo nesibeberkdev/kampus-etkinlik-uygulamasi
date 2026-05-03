@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+src/core/database.py
+src/core/admin_config.py

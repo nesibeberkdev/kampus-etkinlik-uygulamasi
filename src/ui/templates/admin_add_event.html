@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeni Etkinlik Ekle</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+{% include 'partials/navbar.html' %}
+
+<div class="container mt-5" style="max-width: 700px;">
+
+    <h2 class="text-center mb-4">Yeni Etkinlik Ekle</h2>
+
+    <form method="POST" class="card shadow-sm p-4">
+
+        <div class="mb-3">
+            <label class="form-label">Etkinlik Adı</label>
+            <input type="text" name="title" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Açıklama</label>
+            <textarea name="description" class="form-control" rows="4" required></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Tarih</label>
+            <input type="date" name="date" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Konum</label>
+            <input type="text" name="location" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Kontenjan</label>
+            <input type="number" name="capacity" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Görsel Dosya Adı</label>
+            <input type="text" name="image_filename" class="form-control" placeholder="ornek.jpg">
+        </div>
+
+        <button type="submit" class="btn btn-dark w-100">
+            Etkinlik Ekle
+        </button>
+
+        <a href="/admin" class="btn btn-secondary w-100 mt-2">
+            Geri Dön
+        </a>
+
+    </form>
+
+</div>
+
+
+{% include 'partials/footer.html' %}
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
