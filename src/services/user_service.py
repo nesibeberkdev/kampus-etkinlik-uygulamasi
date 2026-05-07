@@ -1,6 +1,6 @@
 import bcrypt
 
-from src.core.connection import get_connection
+from src.core.connection import get_connection #MySQL veri tabanına baglantı açmak.
 
 
 def is_email_registered(email):
@@ -9,7 +9,8 @@ def is_email_registered(email):
     Kayıt varsa True, yoksa False döndürür.
     """
 
-    connection = get_connection()
+    connection = get_connection() #get_connection : bağlantı oluşturuluyor.
+    #connection = get_connection() : connection.py dosyasındaki bağlantı ayarlarını kullan ve MySQL'e bağlan.
 
     if connection is None:
         return False
@@ -23,7 +24,7 @@ def is_email_registered(email):
     """
 
     cursor.execute(query, (email,))
-    result = cursor.fetchone()
+    result = cursor.fetchone()#bulduğun ilk sonucu getir.
 
     cursor.close()
     connection.close()
