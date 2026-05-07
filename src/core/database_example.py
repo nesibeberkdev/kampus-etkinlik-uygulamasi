@@ -6,5 +6,5 @@ class DatabaseConfig:
 
     host = "localhost"
     user = "your_username"
-    password = "your_password"
+    password = "your_password "
     name = "your_database_name"
