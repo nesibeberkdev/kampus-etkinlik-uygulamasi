@@ -1,6 +1,6 @@
 import bcrypt
 
-from src.core.connection import get_connection #MySQL veri tabanına baglantı açmak.
+from core.connection import get_connection #MySQL veri tabanına baglantı açmak.
 
 
 def is_email_registered(email):

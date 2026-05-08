@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template, request, redirect, url_for, session
 
-from src.core.admin_config import AdminConfig
-from src.services.event_service import get_all_events, get_event_by_id, update_event , add_event,delete_event
+from core.admin_config import AdminConfig
+from services.event_service import get_all_events, get_event_by_id, update_event , add_event,delete_event
 
 
 admin_bp = Blueprint("admin_bp", __name__)

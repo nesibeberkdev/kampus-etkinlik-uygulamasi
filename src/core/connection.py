@@ -1,5 +1,5 @@
 import mysql.connector
-from src.core.database import DatabaseConfig
+from core.database import DatabaseConfig
 
 
 def get_connection():

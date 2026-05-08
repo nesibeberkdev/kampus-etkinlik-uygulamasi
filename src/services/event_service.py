@@ -1,4 +1,4 @@
-from src.core.connection import get_connection
+from core.connection import get_connection
 
 
 def get_all_events():

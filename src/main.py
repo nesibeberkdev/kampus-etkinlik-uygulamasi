@@ -1,10 +1,10 @@
 from flask import Flask
-
-from src.core.config import config
-from src.ui.routes import routes_bp
+ 
+from core.config import config
+from ui.routes import routes_bp
 #admin
-from src.ui.routes import routes_bp
-from src.ui.admin_routes import admin_bp
+from ui.routes import routes_bp
+from ui.admin_routes import admin_bp
 
 
 # Flask uygulaması oluşturulur.

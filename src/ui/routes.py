@@ -1,8 +1,8 @@
 from flask import Blueprint, render_template, request, redirect, url_for, session
 
-from src.services.user_service import register_user, login_user, get_user_by_email
-from src.services.event_service import get_all_events
-from src.services.participation_service import (
+from services.user_service import register_user, login_user, get_user_by_email
+from services.event_service import get_all_events
+from services.participation_service import (
     add_participation,
     get_user_joined_events,
     leave_participation
